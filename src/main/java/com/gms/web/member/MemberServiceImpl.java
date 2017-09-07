@@ -5,9 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
+
 import com.gms.web.command.CommandDTO;
 
-
+@Service
 public class MemberServiceImpl implements MemberService {
 	public static MemberServiceImpl instance = new MemberServiceImpl();
 	public static MemberServiceImpl getInstance(){

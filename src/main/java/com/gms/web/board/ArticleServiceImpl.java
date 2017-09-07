@@ -2,6 +2,9 @@ package com.gms.web.board;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class ArticleServiceImpl implements ArticleService {
 	public static ArticleServiceImpl getInstance(){
 		return new ArticleServiceImpl();

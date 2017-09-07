@@ -1,6 +1,8 @@
 package  com.gms.web.constant;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class SQL {
 
 	public static final String MEMBER_INSERT=String.format("INSERT INTO %s(%s,%s,%s,%s,%s,%s,%s,%s)  VALUES(?,?,?,?,?,?,?,SYSDATE)",
