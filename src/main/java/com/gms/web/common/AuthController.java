@@ -18,6 +18,6 @@ public class AuthController {
 	@RequestMapping("/login")
 	public String login() {
 		logger.info("Welcome HOME 진입! {}.");
-		return "common/main";
+		return "auth:common/main.tiles";
 	}
 }

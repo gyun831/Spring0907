@@ -14,21 +14,21 @@ public class MemberController {
 	@RequestMapping("/add")
 	public String memadd() {
 		logger.info("Welcome Member ADD 진입!");
-		return "member/member_add";
+		return "public:member/member_add.tiles";
 	}
 	@RequestMapping("/list")
 	public String memlist() {
 		logger.info("Welcome Member list 진입!");
-		return "member/member_list";
+		return "auth:member/member_list.tiles";
 	}
 	@RequestMapping("/update")
 	public String memupdate() {
 		logger.info("Welcome Member update 진입!");
-		return "member/member_update";
+		return "auth:member/member_update.tiles";
 	}
 	@RequestMapping("/detail")
 	public String memdetail() {
 		logger.info("Welcome Member detail 진입!");
-		return "member/member_detail";
+		return "auth:member/member_detail.tiles";
 	}
 }

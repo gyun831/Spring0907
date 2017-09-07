@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.text.SimpleDateFormat" import="java.util.Date"%>
-<jsp:include page="../common/header.jsp"/>
 <!DOCTYPE html>
 <html>
 <head>

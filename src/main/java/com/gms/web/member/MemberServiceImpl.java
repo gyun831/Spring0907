@@ -27,7 +27,7 @@ public class MemberServiceImpl implements MemberService {
 		MemberDTO m =(MemberDTO) map.get("member");
 		System.out.println("넘어온 회원의 이름:"+m.getName());
 		@SuppressWarnings("unchecked")
-		List<MajorBean>list= (List<MajorBean>) map.get("major");
+		List<MajorDTO>list= (List<MajorDTO>) map.get("major");
 		System.out.println("넘어온 수강과목:"+list);
 		//MemberDAOImpl.getInstance().insert(map);
 		return null;

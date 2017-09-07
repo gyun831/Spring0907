@@ -12,23 +12,23 @@ public class BoardController {
 	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
 	@RequestMapping("/add")
 	public String boardadd() {
-		logger.info("Welcome Member ADD 진입!");
-		return "board/board_add";
+		logger.info("Welcome Board ADD 진입!");
+		return "auth:board/board_add.tiles";
 	}
 	@RequestMapping("/list")
 	public String boardlist() {
 		logger.info("Welcome Board LIST 진입!");
-		return "board/board_list";
+		return "auth:board/board_list.tiles";
 	}
 	@RequestMapping("/update")
 	public String boardupdate() {
 		logger.info("Welcome Board Update 진입!");
-		return "board/board_update";
+		return "auth:board/board_update.tiles";
 	}
 	@RequestMapping("/detail")
 	public String boarddetail() {
 		logger.info("Welcome Board Detail 진입!");
-		return "board/board_detail";
+		return "auth:board/board_detail.tiles";
 	}
 
 }

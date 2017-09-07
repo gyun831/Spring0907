@@ -14,22 +14,22 @@ public class GradeController {
 	@RequestMapping("/add")
 	public String boardadd() {
 		logger.info("Welcome Grade ADD 진입!");
-		return "grade/grade_add";
+		return "auth:grade/grade_add.tiles";
 	}
 	@RequestMapping("/list")
 	public String boardlist() {
 		logger.info("Welcome Grade LIST 진입!");
-		return "grade/grade_list";
+		return "auth:grade/grade_list.tiles";
 	}
 	@RequestMapping("/update")
 	public String boardupdate() {
 		logger.info("Welcome Grade Update 진입!");
-		return "grade/grade_update";
+		return "auth:grade/grade_update.tiles";
 	}
 	@RequestMapping("/detail")
 	public String boarddetail() {
 		logger.info("Welcome Grade Detail 진입!");
-		return "grade/grade_detail";
+		return "auth:grade/grade_detail.tiles";
 	}
 
 }
