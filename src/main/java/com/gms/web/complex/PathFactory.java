@@ -19,5 +19,4 @@ public class PathFactory {
 		path.setJs(path.getCtx()+"/resources/js");
 		return path;
 	} 
-
 }
