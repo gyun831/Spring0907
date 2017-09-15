@@ -7,12 +7,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface ArticleService {
-	public String write(ArticleDTO bean);
-	public List<ArticleDTO> list();
-	public List<ArticleDTO> findById(String id);
-	public ArticleDTO findSeq(String seq);
+	public String write(BoardDTO bean);
+	public List<BoardDTO> list();
+	public List<BoardDTO> findById(String id);
+	public BoardDTO findSeq(String seq);
 	public String count();
-	public String modify(ArticleDTO bean);
+	public String modify(BoardDTO bean);
 	public String remove(String seq);
 	
 

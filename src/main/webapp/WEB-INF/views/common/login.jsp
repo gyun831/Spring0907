@@ -15,6 +15,7 @@
 		<input type="hidden" name="action" value="login">
 		<input type="hidden" name="page" value="home">
 	</form>
+	<div style="text-align: center;width: 100%;height: 50px;"><h4 style="font-size: 20px; color: red;">${message}</h4></div>
 </div>
 <script>
 app.auth.init();

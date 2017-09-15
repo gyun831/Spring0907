@@ -38,7 +38,7 @@
  	  </ul>
  	  </li>
  	  </ul>
-    <span class="gms-float-right">${sessionScope.user.name} &nbsp;<a id="logout" onclick="log_out('common','home2')" >로그아웃</a></span>
+    <span class="gms-float-right">${user.name} &nbsp;<a id="logout" onclick="log_out('common','home2')" >로그아웃</a></span>
  <script>
  app.navbar.init();
  //window.onload=navbarLoad();

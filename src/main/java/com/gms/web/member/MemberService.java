@@ -8,12 +8,12 @@ import org.springframework.stereotype.Component;
 import com.gms.web.command.CommandDTO;
 @Component
 public interface MemberService {
-	public String addMember(Map<String,Object> map);
+	public int addMember(Map<?,?>map);
 	public List<?> list(CommandDTO cmd);
-	public String countMembers(CommandDTO cmd);
-	public StudentDTO findById(CommandDTO cmd);
+	public String count();
+	public MemberDTO findById(CommandDTO cmd);
 	public List<?> findByName(CommandDTO cmd);
-	public String modify(StudentDTO student);
-	public String remove(CommandDTO cmd);
-	public Map<String,Object> login(MemberDTO bean);
+	public int modify(MemberDTO member);
+	public int remove(CommandDTO cmd);
+	public Map<String,Object> login(CommandDTO bean);
 }

@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Lazy @Component @Data
 public class StudentDTO {
-	private String no,id,name,pw,ssn,regdate,phone,email,title;
+	private String no,id,name,password,ssn,regdate,phone,email,title;
 
 	@Override
 	public String toString() {

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ include file="../member/member_head.jsp" %>
-
+<div style="text-align: center;width: 100%;height: 50px;">
+	<h4 style="font-size: 20px; color: red;">${message}</h4>
+</div>
 <div id="container">
 	<form id="join_form" action="../member/service_add.jsp" method="get">
 	<fieldset style="width:400px; margin:0 auto; padding-top:5px;">

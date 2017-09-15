@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import lombok.Data;
 
 @Lazy @Component @Data
-public class ArticleDTO implements Serializable {
+public class BoardDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private String title,content,regdate,id;
 	private int hitcount,articleseq;

@@ -13,22 +13,22 @@ public class ArticleServiceImpl implements ArticleService {
 		
 	}
 	@Override
-	public String write(ArticleDTO bean) {
+	public String write(BoardDTO bean) {
 		return null; //(Integer.parseInt(ArticleDAOImpl.getInstance().insert(bean))==1)?"게시성공":"게시실패";
 	}
 
 	@Override
-	public List<ArticleDTO> list() {
+	public List<BoardDTO> list() {
 		return null; // ArticleDAOImpl.getInstance().selectAll();
 	}
 
 	@Override
-	public List<ArticleDTO> findById(String id) {
+	public List<BoardDTO> findById(String id) {
 		return null; // ArticleDAOImpl.getInstance().selectById(id);
 	}
 
 	@Override
-	public ArticleDTO findSeq(String seq) {
+	public BoardDTO findSeq(String seq) {
 		return null; // ArticleDAOImpl.getInstance().selectBySeq(seq);
 	}
 
@@ -38,7 +38,7 @@ public class ArticleServiceImpl implements ArticleService {
 	}
 
 	@Override
-	public String modify(ArticleDTO bean) {
+	public String modify(BoardDTO bean) {
 		return null; // ArticleDAOImpl.getInstance().update(bean).equals("1")?"수정성공":"수정실패";
 	}
 

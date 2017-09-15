@@ -1,45 +1,45 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<jsp:include page="member_head.jsp"/>
+
       <div class="container">    
           <div class="jumbotron">
             <div class="row">
                 <div class="col-md-3 col-xs-12 col-sm-6 col-lg-3">
                   <div class="thumbnail text-center photo_view_postion_b" >
-                    <img id="profileBtn" src="${paht.img}/2.jpg" alt="stack photo" class="img">
+                    <img id="profileBtn" src="${path.img}/2.jpg" alt="stack photo" class="img">
                   </div>
                 </div>
                 <div class="col-md-9 col-xs-12 col-sm-6 col-lg-9">
                     <div class="" style="border-bottom:1px solid black">
-                      <span style="font-size: 50px">${requestScope.student.name}</span>
+                      <span style="font-size: 50px">${student.name}</span>
                       &nbsp;&nbsp;&nbsp;&nbsp;
-                      <button id="updateBtn" onclick="moveTo('member','member_update')">정보수정</button>
+                      <button id="updateBtn" onclick="app.controller.moveTo('member','member_update')">정보수정</button>
                     </div>
                       <hr>
                     <div class="col-md-6"> 
-                    <input type="hidden" id="id" value="${requestScope.student.id}" /> 
+                    <input type="hidden" id="id" value="${student.id}" /> 
                     <ul class=" details"> 
                       <li>
                       	<p>
                       		<span class="glyphicon glyphicon-credit-card one" style="width:50px;">
                       		</span>
-                      			${requestScope.student.id}
+                      			${student.id}
                       	 </p>
                       </li>
                       <li> <!-- num, id, name, ssn, regdate, phone, email, title -->
                       	<p id="email">
                       		<span class="glyphicon glyphicon-envelope one" style="width:50px;">
                       		</span>
-                      			${requestScope.student.email}
+                      			${student.email}
                       	</p>
                       </li>
                       <li><p id="ssn"><span class="glyphicon glyphicon-bold" style="width:50px;"></span>
-                      			${requestScope.student.ssn}
+                      			${student.ssn}
                       	  </p>
                       </li>
                       <li>  <p id="phone">
                       			<span class="glyphicon glyphicon-earphone one" style="width:50px;">
                       			</span>
-                      			${requestScope.student.phone}
+                      			${student.phone}
                       		</p>
                       </li>
                     </ul>
@@ -47,11 +47,10 @@
                     <div class="col-md-6">  
                       <p>
                       	<span class="glyphicon glyphicon-calendar one" style="width:50px;"></span>
-                      	${requestScope.student.regdate}
+                      	${student.regdate}
                       </p>
                       <p id="">
                       	<span class="glyphicon glyphicon-blackboard" style="width:50px;"></span>
-                      	${requestScope.student.title}
                       </p>
                       <%-- <div class="col-sm-5 col-xs-6 tital " >Gender:</div>
                       <div class="col-sm-7 col-xs-6 ">${requestScope.student.ssn}</div>
@@ -111,6 +110,3 @@
               </div>
           </div>
       </div>
-      <script>
-      app.member.init();
-      </script>

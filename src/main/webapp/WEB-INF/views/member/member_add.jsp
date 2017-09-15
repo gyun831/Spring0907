@@ -1,20 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<jsp:include page="member_head.jsp" />
+
 
 <div id="container">
-	<form id="join_form"  onsubmit="memberAdd()">
+	<form id="join_form">
 	<fieldset style="width:400px; margin:0 auto; padding-top:5px;">
 		<legend>Join information</legend>
 			<span id="join_id">ID</span>
 			<input name="id" id="id" type="text" placeholder="ID"/><br/>
-			<span id="join_pass">PW</span>
+			<span id="join_pass">PASSWORD</span>
 			<input name="password" id="pass" type="password" placeholder="PW"/><br>
 			<span id="join_name">NAME</span>
 			<input name="name" type="text" placeholder="이름" /><br>
 			<span id="join_phone">전화번호</span>
 			<input name="phone" type="text" placeholder="전화번호"/><br/>
 			<span id="join_birth">생년월일</span>
-			<input name="birthday" type="text" placeholder="생년월일"/><br />
+			<input name="ssn" type="text" placeholder="생년월일"/><br />
 			<span id="join_gender">성별</span>
 			<input type="radio" name="gender" value="남" checked/>남자
 			<input type="radio" name="gender" value="여"/>여자<br/>
@@ -42,6 +42,7 @@
 	</fieldset>
 	</form>
 </div>
+<script>app.member.init()</script>
 
 
 

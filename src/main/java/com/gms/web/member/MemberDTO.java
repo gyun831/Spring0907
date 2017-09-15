@@ -9,11 +9,9 @@ import lombok.Data;
 
 @Lazy @Component @Data
 public class MemberDTO {
-	private String id, pw, ssn, name, regdate,email,major,subject,phone,profile,gender;
-
-	
+	private String id, password, ssn, name, regdate,email,majorId,subject,phone,profile,gender;
 	public String toString() {
-		return "[name=" + name + ",id=" + id + ",pw=" + pw + ",ssn=" + ssn + "]\n";
+		return "";
 	}
 
 }

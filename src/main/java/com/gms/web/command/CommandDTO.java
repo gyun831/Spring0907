@@ -4,24 +4,23 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 import com.gms.web.constant.*;
+import com.gms.web.member.MemberDTO;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-@Lazy @Component
+@Lazy @Component @Data
 public class CommandDTO implements Commandable{
-	@Getter 
-	protected String action,pageNumber,column;
-	@Getter @Setter
-	protected String startRow,endRow,view,page,dir,search;
+
+	protected String action,pageNumber,column,startRow,endRow,view,page,dir,search;
+	protected MemberDTO member;
+
 	public void setPageNumber(String pageNumber){
 		this.pageNumber=(pageNumber==null)?"1":pageNumber;
 	}
 	public void setAction(String action){
 		this.action=(action==null)?"move":action;
-	}
-	public void setColumn(String column){
-		this.column=(column==null)?"none":column;
 	}
 	@Override
 	public void process() {
